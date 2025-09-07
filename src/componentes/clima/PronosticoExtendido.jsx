@@ -15,7 +15,7 @@ const PronosticoExtendido = ({
           setSistemaUnidades={setSistemaUnidades}
         />
       </div>
-      <div className="flex flex-wrap items-center justify-between px-4 sm:px-6 md:px-8 lg:px-12">
+      <div className="flex flex-wrap items-center justify-between gap-6 md:gap-0 px-4 sm:px-6 md:px-8 lg:px-12">
         {cargando
           ? [...Array(5)].map((_, index) => (
               <div key={index} className="flex-shrink-0 snap-center">
