@@ -6,7 +6,6 @@ import ParametrosClimaticos from "../componentes/parametros/ParametrosClimaticos
 import BuscadorCiudad from "../componentes/busqueda/BuscadorCiudad";
 import BotonUbicacion from "../componentes/ui/BotonUbicacion";
 import SelectorTemperatura from "../componentes/ui/SelectorTemperatura";
-import IndicadorCarga from "../componentes/ui/IndicadorCarga";
 
 const Inicio = () => {
   const [ciudad, setCiudad] = useState("Buenos Aires");
@@ -20,10 +19,6 @@ const Inicio = () => {
           <div className="flex p-4 justify-between w-full items-center absolute z-10 md:px-10 lg:px-16">
             <BuscadorCiudad ciudad={ciudad} setCiudad={setCiudad} />
             <div className="md:hidden flex items-center gap-3">
-              <SelectorTemperatura
-                sistemaUnidades={sistemaUnidades}
-                setSistemaUnidades={setSistemaUnidades}
-              />
               <BotonUbicacion setCiudad={setCiudad} />
             </div>
             <div className="hidden md:block">
@@ -34,7 +29,7 @@ const Inicio = () => {
             <img
               src="/iconos/Cloud-background.png"
               alt="nubes"
-              className="absolute h-[35%] w-full object-cover opacity-20 dark:opacity-85 top-10 left-0"
+              className="absolute  w-full object-cover opacity-20 dark:opacity-85 top-10 left-0"
             />
             {pronostico[0] && (
               <TarjetaClima
