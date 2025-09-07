@@ -27,7 +27,7 @@ const ParametrosClimaticos = ({ datosDia, sistemaUnidades }) => {
         <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold py-3 md:py-4 lg:py-6 dark:font-bold">
           Destacados de hoy
         </h2>
-        <div className="grid grid-cols-2 gap-3 md:gap-4 lg:gap-6">
+        <div className="grid grid-cols-1  md:grid-cols-2 gap-3 md:gap-4 lg:gap-6">
           <div className="bg-gray-800 dark:bg-blue-200 p-3 md:p-4 rounded-lg text-center shadow-sm dark:border dark:border-gray-900 transition-all duration-300">
             <p className="text-gray-400 dark:text-gray-700 text-sm md:text-base">
               Estado del viento

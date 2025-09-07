@@ -15,12 +15,10 @@ const PronosticoExtendido = ({
           setSistemaUnidades={setSistemaUnidades}
         />
       </div>
-      <div className="flex flex-wrap items-center justify-between gap-6 md:gap-0 px-4 sm:px-6 md:px-8 lg:px-12">
+      <div className="flex flex-nonwrap  items-center justify-between gap-2 md:gap-0 px-4 pb-4 sm:px-6 md:px-8 lg:px-12 overflow-x-auto snap-x snap-mandatory">
         {cargando
           ? [...Array(5)].map((_, index) => (
-              <div key={index} className="flex-shrink-0 snap-center">
-                <EsqueletoPronosticoDiario />
-              </div>
+              <div key={index} className="flex-shrink-0 snap-center"></div>
             ))
           : datosPronostico.map((datosDia, indice) => (
               <div
